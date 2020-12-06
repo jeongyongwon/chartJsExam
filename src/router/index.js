@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import MyBuilding from '../views/Building.vue'
-import Trading from '../views/Trading.vue'
+import MyBuilding from '../views/Build-C.vue'
+import Trading from '../views/Trade-C.vue'
 
 Vue.use(VueRouter)
 
@@ -19,12 +19,12 @@ const routes = [
     component: About
   },
   {
-    path: '/building',
+    path: '/build',
     name: 'mybuilding',
     component: MyBuilding
   },
   {
-    path: '/trading',
+    path: '/trade',
     name: 'Trading',
     component: Trading
   }   
