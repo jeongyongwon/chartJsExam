@@ -5,7 +5,7 @@
 
     </div>
 
-    <div class="d-flex justify-content-center align-items-center contents router-view-container">
+    <div class="contents router-view-container">
        <router-view/>
     </div>
 
@@ -55,7 +55,10 @@ padding: 0;
 .router-view-container {
   height: 100%;
   margin-bottom: 10%;
-  margin-top:1%
+  margin-top:1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>

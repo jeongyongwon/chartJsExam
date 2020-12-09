@@ -17,191 +17,221 @@
 
     <!-- card형식 -->
     <div v-if="IsCard" class="pp-cards row">
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>      
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div> 
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>          
+          <div class="enery-name">에너지</div>          
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>   
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-danger col-6 card-body" role="alert">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex flex-row">
+      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+        <div class="d-flex justify-content-between header-info">
+          <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
               <div class="pp-name">발전소 이름</div>
               <div class="pp-person">담당자 이름</div>
             </div>
           </div>
-          <div>에너지</div>
+          <div class="enery-name">에너지</div>
         </div>
-        <div>
-          <div>사용 요금</div>
-          <div>detail</div>
+        <div class="price-info-area">
+          <div class="price-info">
+            <div>사용요금</div>
+            <div>detail</div>
+          </div>
+          
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
@@ -367,16 +397,23 @@ padding: 0;
 .app {
   width: 80%;
 }
+
+.header-info {
+  margin-top: ;
+}
+
 .circle-area {
   width:2rem;
   height:2rem;
-  background:#ffffff;
+  background: blueviolet;
   border-radius:50%;
 }
 
+
 .card-body {
   height: 10rem;
-  margin: 0;
+  margin-top: 1rem;
+  border: black solid ;
 }
 
 .cart-btn-area {
@@ -388,12 +425,29 @@ padding: 0;
   height: 100%;
   padding: 1%;
 }
-
+.name-area {
+  margin-left: 2rem;
+}
+.price-info-area {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+.price-info {
+  display: flex;
+  flex-direction: column;
+}
 .changeBtn {
   width: 100%;
 }
+
+
 .gridicon {
   font-size: xx-small;
+}
+
+.enery-name {
+  margin-right: 2rem;
 }
  
 
