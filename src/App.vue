@@ -10,8 +10,8 @@
     </div>
 
     <div class="footer">
-      <router-link to="/trade">내 에너지 현황</router-link>
-      <router-link to="/build">에너지 거래하기</router-link>      
+      <router-link to="/trade">에너지 거래하기</router-link>      
+      <router-link to="/build">내 에너지 현황</router-link>
       <router-link to="/">에너지 거래내역</router-link>    
     </div>
   </div>
@@ -24,6 +24,7 @@
 * {
 margin: 0;
 padding: 0;
+
 }
 
 

@@ -16,8 +16,8 @@
     </div>
 
     <!-- card형식 -->
-    <div v-if="IsCard" class="pp-cards row">
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+    <div v-if="IsCard" class="pp-cards">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -39,7 +39,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -61,7 +61,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>      
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -83,7 +83,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -105,7 +105,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div> 
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -127,7 +127,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -149,7 +149,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>   
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -171,7 +171,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -193,7 +193,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -215,7 +215,7 @@
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
       </div>
-      <div class="d-flex flex-column alert alert-light col-6 card-body" role="alert">
+      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
@@ -397,21 +397,28 @@ padding: 0;
 .app {
   width: 80%;
 }
+.pp-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
 
 .header-info {
-  margin-top: ;
+  margin-top: 2rem;
 }
 
 .circle-area {
   width:2rem;
   height:2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
   background: blueviolet;
   border-radius:50%;
 }
 
 
 .card-body {
-  height: 10rem;
+  height: 12rem;
   margin-top: 1rem;
   border: black solid ;
 }

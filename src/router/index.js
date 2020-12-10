@@ -19,14 +19,14 @@ const routes = [
     component: About
   },
   {
-    path: '/build',
-    name: 'mybuilding',
-    component: MyBuilding
+    path: '/trade',
+    name: 'Trade',
+    component: Trading
   },
   {
-    path: '/trade',
-    name: 'Trading',
-    component: Trading
+    path: '/build',
+    name: 'Build',
+    component: MyBuilding
   }   
 ]
 const router = new VueRouter({
