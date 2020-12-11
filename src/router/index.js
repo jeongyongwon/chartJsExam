@@ -2,8 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import MyBuilding from '../views/Build-C.vue'
-import Trading from '../views/Trade-C.vue'
+import MyBuilding from '../views/consumer/Build-C.vue'
+import Trading from '../views/consumer/Trade-C.vue'
+
+
+
 
 Vue.use(VueRouter)
 
