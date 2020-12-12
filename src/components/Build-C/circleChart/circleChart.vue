@@ -21,18 +21,21 @@ export default {
         var myChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels:[
-                    'pink'
-                ],
+                labels:["화석에너지", "자체생산에너지", "친환경에너지"],
                 datasets:  [{
-                    data:[10,25],
+                    data:[25,23,52],
                     backgroundColor : [
-                        "#FF6384"
+                        "#FF6384",
+                        "#f79546",
+                        "#5f497a",
+                       
                     ],
-                    hoverBackgroundColor : [
-                        "#FF6384" 
-                    ]
-                }]                
+                    borderWidth: 0, 
+                    label: "Dataset 1"
+
+                }]    
+                
+          
             },
             options: {
 

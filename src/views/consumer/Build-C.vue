@@ -39,23 +39,40 @@
       </div>
       <br>
       <div class="graph-group d-flex flex-row row">
-        <Bar4 class="" />
-        
-          
-        <!-- <Circle/> -->
-        <!-- <div class="bar-graphs col alert alert-light dummy-line ">
-          일단 여긴 막대 그래프
-        </div> -->
+        <CircleChart class="col"/>
+        <Bar4 class="col" />
       </div>
-
+      <br>
       <!-- 주요 거래 발전소 -->
+
+      <div>
+        <p>주요 거래 발전소</p>
+      </div>
       <div class="row">
-        <div class="pp-info col alert alert-light dummy-line">
-          발전소 정보 1
+        <div class="trade-pp-info col alert alert-light dummy-line">
+          <div class="circle-area"></div>
+          <div class="trade-pp-info-area">
+            <div>발전소이름</div>
+            <div>책임자이름</div>
+            <div>발전에너지</div>
+          </div>
+          <div class="trade-pp-price-area">
+            <div>00km/당</div>
+            <div>1000원</div>
+          </div>
         </div>
 
-        <div class="pp-info col alert alert-light dummy-line ">
-          발전소 정보 2
+        <div class="trade-pp-info col alert alert-light dummy-line ">
+          <div class="circle-area"></div>
+          <div class="trade-pp-info-area">
+            <div>발전소이름</div>
+            <div>책임자이름</div>
+            <div>발전에너지</div>
+          </div>
+          <div class="trade-pp-price-area">
+            <div>00km/당</div>
+            <div>1000원</div>
+          </div>        
         </div>
       </div>
 
@@ -74,7 +91,7 @@ import Bar3 from '../../components/Build-C/lineChart/lineChart3'
 
 import Bar4 from '../../components/Build-C/barChart/barChart'
 
-// import Circle from '../../components/Build-C/circleChart/circleChart.vue'
+import CircleChart from '../../components/Build-C/circleChart/circleChart.vue'
 
 
 
@@ -93,19 +110,10 @@ export default {
       Bar2,
       Bar3,
       Bar4,
-      // Circle,
+      CircleChart
     },
     methods: {
-      // createChart(chatId, chartData) {
-      //   const ctx = document.getElementById(chatId)
-      //   const myChart = new Chart(ctx, {
-      //     type: chartData.type,
-      //     data: chartData.data,
-      //     options: chartData.options
-      //   })
 
-      //   console.log(myChart)
-      // }
     },
     created() {
 
@@ -131,10 +139,29 @@ padding: 0;
 }
 .summary-graph {
   position: static;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;  
 }
-.bar-graph {
-  margin-left : 1rem;
-  margin-right: 1rem;
+.trade-pp-info {
+  display: flex;
+  flex-direction: row;  
+}
+.circle-area {
+  width:2rem;
+  height:2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  background: blueviolet;
+  border-radius:50%;  
+}
+.trade-pp-info-area {
+  display: flex;
+  flex-direction: column;
+}
+.trade-pp-price-area {
+  display: flex;
+  flex-direction: column;  
 }
 
 
