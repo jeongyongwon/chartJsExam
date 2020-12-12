@@ -16,347 +16,58 @@
     </div>
 
     <!-- card형식 -->
-    <div v-if="IsCard" class="pp-cards">
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
+    <div  v-if="IsCard" class="pp-cards">
+
+      <div v-for="trade in trades" :key="trade.pid" class="d-flex flex-column alert alert-light   card-body" role="alert">
         <div class="d-flex justify-content-between header-info">
           <div class="d-flex flex-row name-area">
             <div class="circle-area"></div>            
             <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
+              <div class="pp-name">{{ trade.ppname }}</div>
+              <div class="pp-person">{{ trade.name }}</div>
             </div>
           </div>
-          <div class="enery-name">에너지</div>
+          <div class="enery-name">{{ trade.energy }}</div>
         </div>
         <div class="price-info-area">
           <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
+            <div>{{ trade.price }}</div>
+            <div>{{ trade.detail }}</div>
           </div>
           
         </div>
         <div class="card-btn-area d-flex justify-content-center align-items-center">
           <button class="btn btn-primary card-btn">에너지 거래하기</button>
         </div>
-      </div>
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>      
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div> 
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>          
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>   
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="d-flex flex-column alert alert-light   card-body" role="alert">
-        <div class="d-flex justify-content-between header-info">
-          <div class="d-flex flex-row name-area">
-            <div class="circle-area"></div>            
-            <div class="card-pp-info">
-              <div class="pp-name">발전소 이름</div>
-              <div class="pp-person">담당자 이름</div>
-            </div>
-          </div>
-          <div class="enery-name">에너지</div>
-        </div>
-        <div class="price-info-area">
-          <div class="price-info">
-            <div>사용요금</div>
-            <div>detail</div>
-          </div>
-          
-        </div>
-        <div class="card-btn-area d-flex justify-content-center align-items-center">
-          <button class="btn btn-primary card-btn">에너지 거래하기</button>
-        </div>
-      </div>                                  
+      </div>                                 
     </div>
 
 
 
     <!-- list형식 -->
     <div v-if="IsList" class="pp-lists">
-      <div class="alert alert-primary d-flex row" role="alert">
+      <div v-for="trade in trades" :key="trade.pid" class="alert alert-primary d-flex row" role="alert">
         <div class="col d-flex flex-row align-items-center">
           <div class="circle-area"></div>
           <div class="pp-info d-flex flex-column">
-            <div>발전소 이름</div>
-            <div>담당자 이름</div>
+            <div>{{ trade.ppname }}</div>
+            <div>{{ trade.name }}</div>
           </div>
         </div>
         <div class="col align-items-center">
-          <div>사용한 연료</div>
+          <div>{{ trade.energy }}</div>
         </div>
         <div class="col align-items-center d-flex flex-column">
-          <div>사용 요금</div>
-          <div>상세보기</div>
+          <div>{{ trade.price }}</div>
+          <div>{{ trade.detail }}</div>
         </div>
         <div class="col align-items-center">
           <button class="btn btn-primary">에너지 거래하기</button>
         </div>
       </div>
-      <div class="alert alert-primary d-flex row" role="alert">
-        <div class="col d-flex flex-row">
-          <div class="circle-area"></div>
-          <div class="pp-info d-flex flex-column">
-            <div>발전소 이름</div>
-            <div>담당자 이름</div>
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div>사용한 연료</div>
-        </div>
-        <div class="col align-items-center d-flex flex-column">
-          <div>사용 요금</div>
-          <div>상세보기</div>
-        </div>
-        <div class="col align-items-center">
-          <button class="btn btn-primary">에너지 거래하기</button>
-        </div>
-      </div>      
-      <div class="alert alert-primary d-flex row" role="alert">
-        <div class="col d-flex flex-row">
-          <div class="circle-area"></div>
-          <div class="pp-info d-flex flex-column">
-            <div>발전소 이름</div>
-            <div>담당자 이름</div>
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div>사용한 연료</div>
-        </div>
-        <div class="col align-items-center d-flex flex-column">
-          <div>사용 요금</div>
-          <div>상세보기</div>
-        </div>
-        <div class="col align-items-center">
-          <button class="btn btn-primary">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="alert alert-primary d-flex row" role="alert">
-        <div class="col d-flex flex-row">
-          <div class="circle-area"></div>
-          <div class="pp-info d-flex flex-column">
-            <div>발전소 이름</div>
-            <div>담당자 이름</div>
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div>사용한 연료</div>
-        </div>
-        <div class="col align-items-center d-flex flex-column">
-          <div>사용 요금</div>
-          <div>상세보기</div>
-        </div>
-        <div class="col align-items-center">
-          <button class="btn btn-primary">에너지 거래하기</button>
-        </div>
-      </div> 
-      <div class="alert alert-primary d-flex row" role="alert">
-        <div class="col d-flex flex-row">
-          <div class="circle-area"></div>
-          <div class="pp-info d-flex flex-column">
-            <div>발전소 이름</div>
-            <div>담당자 이름</div>
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div>사용한 연료</div>
-        </div>
-        <div class="col align-items-center d-flex flex-column">
-          <div>사용 요금</div>
-          <div>상세보기</div>
-        </div>
-        <div class="col align-items-center">
-          <button class="btn btn-primary">에너지 거래하기</button>
-        </div>
-      </div>
-      <div class="alert alert-primary d-flex row" role="alert">
-        <div class="col d-flex flex-row">
-          <div class="circle-area"></div>
-          <div class="pp-info d-flex flex-column">
-            <div>발전소 이름</div>
-            <div>담당자 이름</div>
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div>사용한 연료</div>
-        </div>
-        <div class="col align-items-center d-flex flex-column">
-          <div>사용 요금</div>
-          <div>상세보기</div>
-        </div>
-        <div class="col align-items-center">
-          <button class="btn btn-primary">에너지 거래하기</button>
-        </div>
-      </div>
+
+    
+
     </div>
   </div>
 </template>
@@ -368,6 +79,56 @@ export default {
         return {
           IsCard:true,
           IsList:false,
+          trades: [
+            {
+              pid:1,
+              ppname:'발전소이름',
+              name: '담당자 이름',
+              energy: '에너지',
+              price:'사용요금',
+              detail:'상세보기'
+            },
+            {
+              pid:2,
+              ppname:'발전소이름',
+              name: '담당자 이름',
+              energy: '에너지',
+              price:'사용요금',
+              detail:'상세보기'
+            },
+            {
+              pid:3,
+              ppname:'발전소이름',
+              name: '담당자 이름',
+              energy: '에너지',
+              price:'사용요금',
+              detail:'상세보기'
+            },
+            {
+              pid:4,
+              ppname:'발전소이름',
+              name: '담당자 이름',
+              energy: '에너지',
+              price:'사용요금',
+              detail:'상세보기'
+            },
+            {
+              pid:5,
+              ppname:'발전소이름',
+              name: '담당자 이름',
+              energy: '에너지',
+              price:'사용요금',
+              detail:'상세보기'
+            },
+            {
+              pid:6,
+              ppname:'발전소이름',
+              name: '담당자 이름',
+              energy: '에너지',
+              price:'사용요금',
+              detail:'상세보기'
+            },                                                            
+          ]
         }
     },
     methods: {
