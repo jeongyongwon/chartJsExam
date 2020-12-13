@@ -7,7 +7,7 @@
 
     <!-- 요약 그래프 -->
     <div class="summary-graph d-flex flex-row row">
-      <Bar class="dummy-line bar-graph col"/>
+      <Bar1 class="dummy-line bar-graph col"/>
       <Bar2 class="dummy-line bar-graph col"/>
       <Bar3 class="dummy-line bar-graph col"/>
     </div>
@@ -85,7 +85,7 @@
 <script>
 
 // import Chart from 'chart.js'
-import Bar from '../../components/Build-C/lineChart/lineChart'
+import Bar1 from '../../components/Build-C/lineChart/lineChart1'
 import Bar2 from '../../components/Build-C/lineChart/lineChart2'
 import Bar3 from '../../components/Build-C/lineChart/lineChart3'
 
@@ -106,7 +106,7 @@ export default {
         }
     },
     components: {
-      Bar,
+      Bar1,
       Bar2,
       Bar3,
       Bar4,

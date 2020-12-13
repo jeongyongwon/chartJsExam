@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import MyBuilding from '../views/consumer/Build-C.vue'
 import Trading from '../views/consumer/Trade-C.vue'
+import TradeDetail from '../views/consumer/TradeDetail-C.vue'
 
 
 
@@ -30,7 +31,11 @@ const routes = [
     path: '/build',
     name: 'Build',
     component: MyBuilding
-  }   
+  },
+  {
+    path: '/trade/detail',
+    component: TradeDetail 
+  }      
 ]
 const router = new VueRouter({
   mode: 'history',
